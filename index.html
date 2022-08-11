@@ -1,0 +1,22 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 id="top">Generate a</h1>
+        <h1 id="bottom">random password</h1>
+        <p>Never use an insecure password again</p>
+        <form>
+            <input type="text" id="input-id" value="" placeholder="length"/>
+            <input type="button" id="submit-btn" onclick="setPasswordLength()" value="Submit"/>
+        </form>
+        <button onclick="generatePasswords()" class="btn">Generate passwords</button>
+
+        <div id="container">
+            <div id="password-one" class="password-el"></div>
+            <div id="password-two" class="password-el"></div>
+        </div>
+        <p id="length-el"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
